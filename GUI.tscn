@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://GUI.gd" type="Script" id=2]
+
+[node name="GUI" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="LabelHighScore" type="Label" parent="."]
+margin_top = 547.035
+margin_right = 144.0
+margin_bottom = 601.035
+custom_fonts/font = ExtResource( 1 )
+text = "High Score:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="LabelHighScore"]
+margin_left = 157.0
+margin_right = 236.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 1 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelScore" type="Label" parent="."]
+margin_right = 86.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 1 )
+text = "SCORE:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="LabelScore"]
+margin_left = 86.0
+margin_right = 157.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 1 )
+text = "0"
+align = 2

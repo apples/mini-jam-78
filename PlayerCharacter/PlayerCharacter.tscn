@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://PlayerCharacter/player_spriteframes.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://PlayerCharacter/PlayerCharacter.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2.875, 5.625 )
+
+[node name="PlayerCharacter" type="KinematicBody2D" groups=[
+"player",
+]]
+script = ExtResource( 2 )
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 0.375 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = ExtResource( 1 )
+animation = "WalkRight"
